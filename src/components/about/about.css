@@ -1,0 +1,20 @@
+#about h1{
+    margin-top: 28px;
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+    color: #0A0460;
+}
+
+.about-cont{
+    display: flex;
+    justify-content: space-between;
+    gap: 70px;
+    align-items: center;
+}
+
+.about-cont p{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 35px;
+}

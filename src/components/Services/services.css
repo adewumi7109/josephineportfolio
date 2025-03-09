@@ -1,0 +1,51 @@
+
+
+#services h1{
+    margin-top: 28px;
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+    color: #0A0460;
+}
+
+.service-cont{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.service-cont  {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 40px; 
+    margin-top: 80px;
+}
+
+.box {
+   background-color: #F4F3F3;
+   padding: 34px;
+   border-radius: 24px;
+   height: 322px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 25px;
+}
+.box img{
+    height: 40px;
+    width: 40px;
+    object-fit: contain;
+}
+
+.box p{
+    font-weight: 500px;
+    font-size: 20px;
+    text-align: center;
+}
+.box h2{
+    text-align: center;
+    color: #1001ED;
+    font-weight: 700px;
+    font-size: 24px;
+}

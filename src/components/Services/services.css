@@ -1,12 +1,20 @@
 
-
-#services h1{
+  
+  #services h1{
     margin-top: 28px;
     font-weight: 700;
     font-size: 40px;
     text-align: center;
     color: #0A0460;
-}
+    margin-bottom: 50px;
+  }
+/* #services h1{
+    margin-top: 28px;
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+    color: #0A0460;
+} */
 
 .service-cont{
     display: flex;

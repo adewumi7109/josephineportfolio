@@ -19,7 +19,7 @@ const ProgressCircle = ({ percentage, icon, label }) => {
       <div
         style={{
           position: "absolute",
-          top: "40%",
+          top: "30%",
           left: "50%",
           transform: "translate(-50%, -50%)",
           width: "40px",
@@ -32,7 +32,7 @@ const ProgressCircle = ({ percentage, icon, label }) => {
           style={{ width: "100%", height: "100%", objectFit: "contain" }}
         />
       </div>
-
+        <p style={{fontWeight: '700', fontSize: '40px', color: '#1100FD'}}>{percentage}%</p>
       {/* Label Below */}
       <p style={{ marginTop: "10px", fontWeight: "700",  color: '#959595', textWrap: 'nowrap' }}>{label}</p>
     </div>

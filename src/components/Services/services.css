@@ -36,9 +36,12 @@
    height: 322px;
    display: flex;
    flex-direction: column;
-   justify-content: center;
+   /* justify-content: center; */
+   
+
    align-items: center;
-   gap: 25px;
+   gap: 20px;
+   padding-top: 50px;
 }
 .box img{
     height: 40px;
@@ -55,5 +58,5 @@
     text-align: center;
     color: #1001ED;
     font-weight: 700px;
-    font-size: 24px;
+    font-size: 22px;
 }

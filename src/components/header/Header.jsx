@@ -1,29 +1,47 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import './header.css'
 
+
 function Header() {
+ const [active, setActive] = useState(null)
+ const [activeHash, setActiveHash] = useState(window.location.hash);
+console.log(activeHash)
+ useEffect(() => {
+    const handleHashChange = () => {
+      setActiveHash(window.location.hash);
+    };
+
+    window.addEventListener("hashchange", handleHashChange);
+
+    return () => {
+      window.removeEventListener("hashchange", handleHashChange);
+    };
+  }, []);
+
+
+
   return (
     <div className='wrapper'>
         <nav>
             <ul>
-               <a href="">
-               <li> Home</li>
+               <a href="#"  className={activeHash === "" ? "active" : ""}>
+               <li > Home</li>
                </a>
-               <a href="#services">
+               <a   href="#services"  className={activeHash === "#services" ? "active" : ""}>
                <li> Services</li>
                </a>
-               <a href="#about">
+               <a href="#about" className={activeHash === "#about" ? "active" : ""}>
                <li> About Me</li>
                </a>
-               <a href="#portfolio">
+               <a href="#portfolio" className={activeHash === "#portfolio" ? "active" : ""}>
                <li> Portfolio</li>
                </a>
-               <a href="#contact">
+               <a href="#contact" className={activeHash === "#contact" ? "active" : ""}>
                <li> Contact Me</li>
                </a>
             </ul>
 
-            <a className='primary-btn' href="">Hire Me</a>
+            <a className='primary-btn' href="#contact">Hire Me</a>
         </nav>
         <header>
             <div className='left'>

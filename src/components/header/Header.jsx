@@ -9,16 +9,16 @@ function Header() {
                <a href="">
                <li> Home</li>
                </a>
-               <a href="">
+               <a href="#services">
                <li> Services</li>
                </a>
-               <a href="">
+               <a href="#about">
                <li> About Me</li>
                </a>
-               <a href="">
+               <a href="#portfolio">
                <li> Portfolio</li>
                </a>
-               <a href="">
+               <a href="#contact">
                <li> Contact Me</li>
                </a>
             </ul>

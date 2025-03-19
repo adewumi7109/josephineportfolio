@@ -38,4 +38,9 @@
     margin-bottom: 20px;
 }
 
+@media screen and (max-width: 892px) {
+  .form-container form .col{
+    flex-direction: column;
+  }
+}
   

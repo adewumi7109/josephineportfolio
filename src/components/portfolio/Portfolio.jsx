@@ -16,14 +16,14 @@ function Portfolio() {
       title: "Vinitpay",
       date: "Jan 2023 - Feb Present",
       type: "Website Design",
-      image: "/Frame 85.png",
+      image: "/Group 427319120.png",
     },
     {
       id: "website",
       title: "Turnify",
       date: "Jan 2025 - Feb 2025",
       type: "Website Design",
-      image: "/Turn.png",
+      image: "/Group 427319121.png",
     },
     {
       id: "app",
@@ -37,27 +37,28 @@ function Portfolio() {
       title: "Mycdaonline",
       date: "Sept 2024 - Feb 2025",
       type: "Website Design",
-      image: "",
+      image: "/Group 427319122.png",
     },
     {
       id: "website",
       title: "Foritrack",
       date: "Jan 2025 - Feb 2025",
       type: "Website Design",
-      image: "/fortitrack.png",
+      image: "/Home Page(Version3 1.png",
     },
     {
       id: "branding",
       title: "Visual Design & Branding",
       date: "Jan 2022 - Present",
       type: "Branding",
-      image: "",
+      image: "/Group 427319123.png",
     },
   ];
 
   return (
-    <section id="portfolio">
+    <section id="portfolio" >
       <h1>Featured Portfolio</h1>
+      <div className="wrapper">
       {/* Tab Buttons */}
       <div className="tab-buttons">
         {tabs.map((tab) => (
@@ -91,6 +92,7 @@ function Portfolio() {
               </div>
             </div>
           ))}
+      </div>
       </div>
     </section>
   );

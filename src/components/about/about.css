@@ -28,3 +28,18 @@
     font-size: 20px;
     line-height: 35px;
 }
+
+@media screen and (max-width: 892px) {
+  .about-cont{
+    flex-direction: column;
+  }
+  .about-cont img{
+    width: 90%;
+  }
+  .skills{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px !important;
+  }
+}

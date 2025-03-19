@@ -17,17 +17,18 @@
 } */
 
 .service-cont{
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+    justify-content: center;
 }
 
-.service-cont  {
+/* .service-cont  {
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
     gap: 40px; 
     margin-top: 80px;
-}
+} */
 
 .box {
    background-color: #F4F3F3;
@@ -59,4 +60,9 @@
     color: #1001ED;
     font-weight: 700px;
     font-size: 22px;
+}
+@media screen and (max-width: 892px) {
+    /* .service-cont{
+        flex-wrap: wrap;
+    } */
 }

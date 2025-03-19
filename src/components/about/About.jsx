@@ -31,7 +31,7 @@ Let’s bring your vision to life with thoughtful and impactful design!</p>
             </div>
         </div>
 
-        <div className='wrapper' style={{ display: "flex",  gap: "100px", marginTop: 60, paddingBottom: '35px'}}>
+        <div className='skills wrapper' style={{ display: "flex",  gap: "100px", marginTop: 60, paddingBottom: '35px'}}>
         {skills.map((skill, index) => (
         <ProgressCircle
           key={index}

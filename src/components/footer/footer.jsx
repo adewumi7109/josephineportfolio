@@ -6,8 +6,11 @@ import { FaPhoneAlt } from "react-icons/fa";
 function Footer() {
   return (
     <footer>
+      <div className="wrapper">
 
-        <ul>
+     
+       <div className="footer">
+       <ul>
             <a href=""><li> Home</li></a>
             <a href=""><li> Services</li></a>
             <a href=""><li> About me</li></a>
@@ -36,7 +39,8 @@ function Footer() {
                     <p>+2349034829116</p>
                   </div>
                 </div>
-
+       </div>
+                </div>
     </footer>
   )
 }

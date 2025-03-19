@@ -11,6 +11,7 @@ nav{
     z-index: 1000;
     background-color: white;
     padding: 0 60px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
     
 }
 nav ul{
@@ -18,7 +19,7 @@ nav ul{
     display: flex;
     justify-content: space-between;
     width: 50%;
-
+    transition: all 0.3s ease-in-out;
 }
 nav ul a{
     color: #343434;
@@ -77,6 +78,7 @@ header h1{
     display: flex;
     border-radius: 7px;
     margin-top: 30px;
+    width: 100%;
 }
 .proj-cont div{
     padding: 20px;
@@ -88,4 +90,111 @@ header h1{
 
 .proj-cont P{
     color: #1001ED;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: #0A0460;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    background: none;
+    border: 0;
+  }
+
+@media screen and (max-width: 1044px ){
+ 
+    nav ul{
+        /* display: ; */
+        width: 60%;
+    }    
+}
+@media screen and (max-width: 892px) {
+    header{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items:center;
+        width: 100%;
+    }
+    header .btns{
+        justify-content: center;
+    }
+    .left{
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+        /* background-color: red; */
+    }
+    
+    header h1{
+        font-size: 30px;
+    }
+   
+    .right{
+        width: 100%;
+    }
+    .wrapper{
+      width: 95%;
+    }
+    nav {
+        background-color: white;
+    }
+    .proj-cont{
+        flex-direction: column;
+    }
+    .proj-cont div:nth-child(2), .proj-cont div:nth-child(1){
+        border-right: 0;
+        border-left: 0;
+        border-bottom: 1px solid #0A0460;
+    }
+    .btn-wrapper{
+  flex-direction: column;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background: #0A0460;
+        height: calc(100vh - 80px);
+        justify-content: center;
+        gap: 50px;
+        align-items: center;
+        
+        /* Animation setup */
+        opacity: 0;
+        transform: translateY(-20px);
+        visibility: hidden;
+        transition: all 0.4s ease-in-out;
+    }
+
+    nav ul li {
+        color: white;
+    }
+
+    nav .primary-btn {
+        display: none;
+    }
+
+    nav ul.open {
+        opacity: 1;
+        transform: translateY(0);
+        visibility: visible;
+    }
+
+    .menu-toggle {
+        display: block;
+        font-size: 24px;
+        background: none;
+        border: none;
+        color: #0A0460;
+        cursor: pointer;
+        position: absolute;
+        right: 20px;
+    }
 }

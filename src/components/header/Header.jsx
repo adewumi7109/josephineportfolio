@@ -63,7 +63,7 @@ useEffect(() => {
                 </div>
                 <div className='gap24 btn-wrapper'>
                     <a className='primary-btn' href='#contact'>Hire me</a>
-                    <a href='' className='secondary-btn'>Download CV </a>
+                    <a href='/JOSEPHINE TAIWO KAYODE CV.pdf' download="Josephine's cv" className='secondary-btn'>Download CV </a>
                 </div>
                 <div className='proj-cont'>
                     <div>

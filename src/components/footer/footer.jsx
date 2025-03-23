@@ -19,11 +19,11 @@ function Footer() {
         </ul>
 
         <div className='gap24'>
-                    <a href="">
+                    <a href="http://linkedin.com/in/josephine-kayode-8732781a4" target='_blank'>
 
                 <img src="/icons/Frame 53.png" alt="" />
                     </a>
-                    <a href="">
+                    <a href="https://www.behance.net/josetmeghan" target='_blank'>
 
                 <img src="/icons/Frame 55.png" alt="" />
                     </a>

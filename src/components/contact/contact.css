@@ -23,8 +23,18 @@
   .form-container input, select, textarea{
     width: 100%;
     padding-left: 15px;
+    padding-right: 15px;
     border: none;
     outline: none;
+  }
+  select {
+    padding-right: 20px; /* Adjust as needed */
+    appearance: none; /* Removes default styling */
+    background-image: url('/icons/arrowdown.svg'); /* Custom arrow if needed */
+    background-position: right 10px center;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    cursor: pointer;
   }
 
   .form-container input, select{

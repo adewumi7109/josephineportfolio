@@ -15,7 +15,7 @@ function Contact() {
             </div>
             <div className="col">
               <input type="text" placeholder="Phone Number" />
-              <select name="" id="">
+              <select name="" id="" >
                 <option value="">Service of interest</option>
                 <option value="UI/UX&Web Design">UI/UX&Web Design</option>
                 <option value="Branding& Identity">Branding& Identity</option>

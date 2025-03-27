@@ -6,6 +6,8 @@ import "./contact.css";
 
 function Contact() {
   const formRef = useRef();
+  const now = new Date();
+const formattedDate = `${now.getMonth() + 1}/${now.getDate()}/${now.getFullYear()}`;
   const [formData, setFormData] = useState({
     from_name: "",
     from_email: "",
@@ -13,6 +15,8 @@ function Contact() {
     service: "",
     timeline: "",
     message: "",
+    time: formattedDate
+
   });
 
   const [formErrors, setFormErrors] = useState({}); // Track input errors

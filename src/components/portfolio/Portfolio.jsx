@@ -17,6 +17,7 @@ function Portfolio() {
       date: "Jan 2023 - Feb Present",
       type: "Website Design",
       image: "/Group 427319120.png",
+      link: "http://vnitpay.com/"
     },
     {
       id: "website",
@@ -24,6 +25,7 @@ function Portfolio() {
       date: "Jan 2025 - Feb 2025",
       type: "Website Design",
       image: "/Group 427319121.png",
+      link: "https://www.behance.net/gallery/220453377/Queue-Managment-System "
     },
     {
       id: "app",
@@ -38,6 +40,8 @@ function Portfolio() {
       date: "Sept 2024 - Feb 2025",
       type: "Website Design",
       image: "/Group 427319122.png",
+      link: " https://cdaonline-property-management-system.netlify.app/"
+
     },
     {
       id: "website",
@@ -45,6 +49,7 @@ function Portfolio() {
       date: "Jan 2025 - Feb 2025",
       type: "Website Design",
       image: "/Home Page(Version3 1.png",
+      link: "https://www.behance.net/gallery/220576001/IT-ASSET-MANAGEMENT-SOLUTIONS-%28Home-Page-Design%29"
     },
     {
       id: "branding",
@@ -52,6 +57,8 @@ function Portfolio() {
       date: "Jan 2022 - Present",
       type: "Branding",
       image: "/Group 427319123.png",
+      link: "https://drive.google.com/drive/folders/1ElxaJmPK6cukbc6M8k-cw7_W4TNMWXkt"
+
     },
   ];
 
@@ -77,7 +84,7 @@ function Portfolio() {
         {projects
           .filter((project) => activeTab === "all" || project.id === activeTab)
           .map((project, index) => (
-            <div key={index} className="portfolio-item">
+            <a href={project?.link} key={index} className="portfolio-item">
               <img
                 src={project.image}
                 alt={project.title}
@@ -86,11 +93,11 @@ function Portfolio() {
               <div style={{ display: "flex", justifyContent: "space-between" }}>
                 <div style={{ display: "flex", flexDirection: 'column'}}>
                   <h3>{project.title}</h3>
-                  <p>{project.date}</p>
+                  <p style={{color: '#000'}}>{project.date}</p>
                 </div>
-                <span>{project.type}</span>
+                <span style={{color: '#000'}}>{project.type}</span>
               </div>
-            </div>
+            </a>
           ))}
       </div>
       </div>

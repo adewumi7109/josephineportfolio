@@ -8,6 +8,9 @@ import Portfolio from './components/portfolio/Portfolio'
 import Contact from './components/contact/Contact'
 import Footer from './components/footer/footer'
 import './App.css'
+import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer, toast } from "react-toastify";
+
 
 function App() {
       
@@ -18,6 +21,7 @@ function App() {
       <About/>
       <Portfolio/>
       <Contact/>
+
       <Footer/>
     </>
   )

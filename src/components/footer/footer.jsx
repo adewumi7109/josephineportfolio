@@ -11,11 +11,11 @@ function Footer() {
      
        <div className="footer">
        <ul>
-            <a href=""><li> Home</li></a>
-            <a href=""><li> Services</li></a>
-            <a href=""><li> About me</li></a>
-            <a href=""><li> Portfolio</li></a>
-            <a href=""><li> Contact me</li></a>
+            <a href="#"><li> Home</li></a>
+            <a href="#services"><li> Services</li></a>
+            <a href="#about"><li> About me</li></a>
+            <a href="#portfolio"><li> Portfolio</li></a>
+            <a href="#contact"><li> Contact me</li></a>
         </ul>
 
         <div className='gap24'>

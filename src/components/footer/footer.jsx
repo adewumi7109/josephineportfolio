@@ -15,7 +15,7 @@ function Footer() {
             <a href="#services"><li> Services</li></a>
             <a href="#about"><li> About me</li></a>
             <a href="#portfolio"><li> Portfolio</li></a>
-            <a href="#contact"><li> Contact me</li></a>
+            <a href="#contact"><li> Contact me </li></a>
         </ul>
 
         <div className='gap24'>

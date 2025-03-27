@@ -10,7 +10,12 @@
     color: #0A0460;
     margin-bottom: 50px;
   }
-
+  .error-text {
+    color: red;
+    font-size: 12px;
+    margin-top: 4px;
+  }
+  
   .form-container{
     max-width: 1000px;
     margin: 0 auto;

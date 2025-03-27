@@ -33,6 +33,7 @@ function Portfolio() {
       date: "Dec 2025 - Present",
       type: "App Mobile Design",
       image: "/Leinzer.png",
+      link: "https://www.behance.net/gallery/220580693/Leinzr-Custom-Photo-Prints-Frames-App"
     },
     {
       id: "website",

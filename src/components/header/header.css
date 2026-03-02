@@ -29,11 +29,12 @@ nav ul a{
 .active{
  color: #1100FD;
 }
+
 header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 header .left{
     width: 50%;

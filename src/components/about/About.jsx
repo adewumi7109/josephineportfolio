@@ -25,8 +25,9 @@ With expertise in UI/UX design, branding, and digital illustration, I help busin
 My approach is rooted in understanding user needs, problem-solving, and delivering designs that engage, inspire, and drive results. Every project I take on is an opportunity to create something meaningful, blending strategy with creativity to ensure the best possible experience.
 Let’s bring your vision to life with thoughtful and impactful design!</p>
 <div className='gap24 btn-wrapper'>
-                    <a className='primary-btn' href=''>Hire me</a>
-                    <a href='' className='secondary-btn'>Download CV </a>
+                                        <a className='primary-btn' href='#contact'>Hire me</a>
+
+                    <a href='/JOSEPHINE TAIWO KAYODE CV.pdf' download="Josephine's cv" className='secondary-btn'>Download CV </a>
                 </div>
             </div>
         </div>

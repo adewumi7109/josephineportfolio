@@ -67,17 +67,17 @@ useEffect(() => {
                 </div>
                 <div className='proj-cont'>
                     <div>
-                        <p>2+</p>
+                        <p>3+</p>
                         Experiences
                     </div>
                     {/* <div className='sep'></div> */}
                     <div>
-                        <p>20+</p>
+                        <p>50+</p>
                         Project Done
                     </div>
                     {/* <div className='sep'></div> */}
                     <div>
-                        <p>20+</p>
+                        <p>50+</p>
                         Happy Clients
                     </div>
                 </div>

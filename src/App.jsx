@@ -16,6 +16,7 @@ function App() {
       
   return (
     <>
+     <ToastContainer />
       <Header/>
       <Services/>
       <About/>

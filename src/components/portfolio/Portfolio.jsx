@@ -16,7 +16,6 @@ const styles = `
     text-align: center;
     color: #0A0460;
     margin-bottom: 50px;
-    // font-family: 'Syne', sans-serif;
   }
 
   .wrapper {
@@ -173,95 +172,89 @@ function Portfolio() {
   const tabs = [
     { id: "all", label: "All" },
     { id: "website", label: "Website Design" },
-    { id: "app", label: "App Mobile Design" },
+    { id: "webapp", label: "Web Application" },
+    { id: "app", label: "Mobile App Design" },
     { id: "branding", label: "Branding" },
   ];
 
   const projects = [
     {
-      id: "website",
+      id: "vinitpay",
+      category: "webapp",
       title: "Vinitpay",
-      date: "Jan 2023 - Feb Present",
-      type: "Website Design",
+      date: "Jan 2023 - Present",
+      type: "Web Application",
       image: "/Group 427319120.png",
-      link: "http://vnitpay.com/"
+      link: "http://vnitpay.com/",
     },
     {
-      id: "website",
+      id: "turnify",
+      category: "webapp",
       title: "Turnify",
       date: "Jan 2025 - Feb 2025",
-      type: "Website Design",
+      type: "Web Application",
       image: "/Turnify Home Page (Banks) 1.png",
-      link: "https://www.behance.net/gallery/220453377/Queue-Managment-System"
+      link: "https://turnifyng.com/",
     },
     {
-      id: "app",
+      id: "luma",
+      category: "app",
       title: "Luma",
       date: "Dec 2025 - Present",
-      type: "App Mobile Design",
+      type: "Mobile App Design",
       image: "/phone.png",
-      link: "https://www.behance.net/gallery/238736991/Luma-20-Next-Gen-AI-Wellness-App"
+      link: "https://www.behance.net/gallery/238736991/Luma-20-Next-Gen-AI-Wellness-App",
     },
-    // {
-    //   id: "website",
-    //   title: "Mycdaonline",
-    //   date: "Sept 2024 - Feb 2025",
-    //   type: "Website Design",
-    //   image: "/Group 427319122.png",
-    //   link: "https://cdaonline-property-management-system.netlify.app/"
-    // },
-    // {
-    //   id: "website",
-    //   title: "Foritrack",
-    //   date: "Jan 2025 - Feb 2025",
-    //   type: "Website Design",
-    //   image: "/Home Page(Version3 1.png",
-    //   link: "https://www.behance.net/gallery/220576001/IT-ASSET-MANAGEMENT-SOLUTIONS-%28Home-Page-Design%29"
-    // },
     {
       id: "branding",
+      category: "branding",
       title: "Visual Design & Branding",
       date: "Jan 2022 - Present",
       type: "Branding",
       image: "/Group 427319123.png",
-      link: "https://drive.google.com/drive/folders/1ElxaJmPK6cukbc6M8k-cw7_W4TNMWXkt"
+      link: "https://drive.google.com/drive/folders/1ElxaJmPK6cukbc6M8k-cw7_W4TNMWXkt",
     },
     {
       id: "daily2k",
+      category: "website",
       title: "Daily 2k",
       date: "Jan 2025 - Feb 2026",
       type: "Website Design",
       image: "/Daily2k.png",
-      link: "https://www.behance.net/gallery/227533647/Saas-Web-App-%28Case-Study%29?platform=direct"
+      link: "https://www.behance.net/gallery/227533647/Saas-Web-App-%28Case-Study%29?platform=direct",
     },
     {
       id: "pms360",
+      category: "webapp",
       title: "PMS 360",
       date: "Jan 2025 - Feb 2026",
-      type: "Website Design",
+      type: "Web Application",
       image: "/pms 60.png",
-      link: "https://www.behance.net/gallery/242302259/PMS-360-Performance-Management-System"
+      link: "https://www.behance.net/gallery/242302259/PMS-360-Performance-Management-System",
     },
     {
-      id: "ApexDrive",
+      id: "apexdrive",
+      category: "website",
       title: "Apex Drive",
       date: "Jan 2025 - Feb 2026",
       type: "Website Design",
       image: "/Car.png",
-      link: "https://www.behance.net/gallery/240288593/ApexDrive-Landing-Page?platform=direct"
+      link: "https://www.behance.net/gallery/240288593/ApexDrive-Landing-Page?platform=direct",
     },
     {
-      id: "Deep Serenity",
+      id: "deepserenity",
+      category: "website",
       title: "Deep Serenity",
       date: "Jan 2025 - Feb 2026",
       type: "Website Design",
       image: "/image 5.png",
-      link: "https://www.behance.net/gallery/241012333/Deep-Serenity-Luxe-Femme-Luxury-Landing-Page"
+      link: "https://www.behance.net/gallery/241012333/Deep-Serenity-Luxe-Femme-Luxury-Landing-Page",
     },
   ];
 
+  // ✅ FIXED: was incorrectly filtering by p.id instead of p.category
   const filtered = projects.filter(
-    (p) => activeTab === "all" || p.id === activeTab
+    (p) => activeTab === "all" || p.category === activeTab
   );
 
   return (
